@@ -2,17 +2,18 @@
 //  Protocol.m
 //  ProtocalTimer
 //
-//  Created by Peter Kamm on 2/26/14.
-//  Copyright (c) 2014 Digitas. All rights reserved.
+//  Created by Peter Kamm on 2/27/14.
+//  Copyright (c) 2014 Peter Kamm. All rights reserved.
 //
 
 #import "Protocol.h"
+#import "Event.h"
 
 
 @implementation Protocol
 
-@dynamic name;
 @dynamic blurb;
+@dynamic name;
 @dynamic timeStamp;
 @dynamic events;
 

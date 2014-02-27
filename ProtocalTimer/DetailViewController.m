@@ -73,11 +73,14 @@
         NSError *err;
         [eventStore saveEvent:EKevent span:EKSpanThisEvent error:&err];
         
-        for (Event* nextEvent in self.eventArray) {
+        
+        [[self.protocol events] enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
+            
+            Event *nextEvent = (Event*)obj;
             
             EKEvent *EKevent  = [EKEvent eventWithEventStore:eventStore];
             
-            EKevent.title = [NSString stringWithFormat:@"%@: %@",[self.protocol valueForKey:@"name"],[nextEvent name]];
+            EKevent.title = [NSString stringWithFormat:@"%@",[nextEvent name]];
             
             EKevent.startDate = [[NSDate alloc] initWithTimeInterval:[[nextEvent startTimeDuration] integerValue]*60*60 sinceDate:[NSDate date]];
             EKevent.endDate = [[NSDate alloc] initWithTimeInterval:3600 sinceDate:EKevent.startDate];
@@ -85,7 +88,21 @@
             [EKevent setCalendar:[eventStore defaultCalendarForNewEvents]];
             NSError *err;
             [eventStore saveEvent:EKevent span:EKSpanThisEvent error:&err];
-        }
+        }];
+//        
+//        for (Event* nextEvent in [self.protocol events]) {
+//            
+//            EKEvent *EKevent  = [EKEvent eventWithEventStore:eventStore];
+//            
+//            EKevent.title = [NSString stringWithFormat:@"%@",[nextEvent name]];
+//            
+//            EKevent.startDate = [[NSDate alloc] initWithTimeInterval:[[nextEvent startTimeDuration] integerValue]*60*60 sinceDate:[NSDate date]];
+//            EKevent.endDate = [[NSDate alloc] initWithTimeInterval:3600 sinceDate:EKevent.startDate];
+//            
+//            [EKevent setCalendar:[eventStore defaultCalendarForNewEvents]];
+//            NSError *err;
+//            [eventStore saveEvent:EKevent span:EKSpanThisEvent error:&err];
+//        }
 
     }];
 }
@@ -134,8 +151,7 @@
             NSNumber * myNumber = [f numberFromString:[[alertView textFieldAtIndex:1] text]];
             [event setStartTimeDuration:myNumber];
             [event setProtocol:self.protocol];
-            [self.protocol addEventsObject:event];
-            
+
             // Save the context.
             NSError *error = nil;
             if (![[self.fetchedResultsController managedObjectContext] save:&error]) {

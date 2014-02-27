@@ -2,8 +2,8 @@
 //  Event.m
 //  ProtocalTimer
 //
-//  Created by Peter Kamm on 2/26/14.
-//  Copyright (c) 2014 Digitas. All rights reserved.
+//  Created by Peter Kamm on 2/27/14.
+//  Copyright (c) 2014 Peter Kamm. All rights reserved.
 //
 
 #import "Event.h"
@@ -12,9 +12,9 @@
 
 @implementation Event
 
+@dynamic blurb;
 @dynamic name;
 @dynamic startTimeDuration;
-@dynamic blurb;
 @dynamic protocol;
 
 @end

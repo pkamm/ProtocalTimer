@@ -27,8 +27,8 @@
 		883DD6681807B378000B0CB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 883DD6661807B378000B0CB3 /* InfoPlist.strings */; };
 		883DD66A1807B378000B0CB3 /* ProtocalTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 883DD6691807B378000B0CB3 /* ProtocalTimerTests.m */; };
 		884BF7F2181083B5003E45F2 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884BF7F1181083B5003E45F2 /* EventKit.framework */; };
-		889B6CAF18BE199400E18F66 /* Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 889B6CAE18BE199400E18F66 /* Protocol.m */; };
-		889B6CB818BE1C8F00E18F66 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 889B6CB718BE1C8F00E18F66 /* Event.m */; };
+		885FC89918BF5FF600C63044 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FC89818BF5FF600C63044 /* Event.m */; };
+		885FC89C18BF5FF700C63044 /* Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FC89B18BF5FF700C63044 /* Protocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +67,10 @@
 		883DD6671807B378000B0CB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		883DD6691807B378000B0CB3 /* ProtocalTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocalTimerTests.m; sourceTree = "<group>"; };
 		884BF7F1181083B5003E45F2 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
-		889B6CAD18BE199400E18F66 /* Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
-		889B6CAE18BE199400E18F66 /* Protocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Protocol.m; sourceTree = "<group>"; };
-		889B6CB618BE1C8F00E18F66 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		889B6CB718BE1C8F00E18F66 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		885FC89718BF5FF600C63044 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		885FC89818BF5FF600C63044 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		885FC89A18BF5FF700C63044 /* Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
+		885FC89B18BF5FF700C63044 /* Protocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Protocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,10 +143,10 @@
 				883DD6501807B378000B0CB3 /* MasterViewController.m */,
 				883DD6521807B378000B0CB3 /* DetailViewController.h */,
 				883DD6531807B378000B0CB3 /* DetailViewController.m */,
-				889B6CAD18BE199400E18F66 /* Protocol.h */,
-				889B6CAE18BE199400E18F66 /* Protocol.m */,
-				889B6CB618BE1C8F00E18F66 /* Event.h */,
-				889B6CB718BE1C8F00E18F66 /* Event.m */,
+				885FC89A18BF5FF700C63044 /* Protocol.h */,
+				885FC89B18BF5FF700C63044 /* Protocol.m */,
+				885FC89718BF5FF600C63044 /* Event.h */,
+				885FC89818BF5FF600C63044 /* Event.m */,
 				883DD6551807B378000B0CB3 /* Images.xcassets */,
 				883DD64C1807B378000B0CB3 /* ProtocalTimer.xcdatamodeld */,
 				883DD63B1807B378000B0CB3 /* Supporting Files */,
@@ -284,13 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885FC89918BF5FF600C63044 /* Event.m in Sources */,
 				883DD6541807B378000B0CB3 /* DetailViewController.m in Sources */,
 				883DD6511807B378000B0CB3 /* MasterViewController.m in Sources */,
 				883DD64E1807B378000B0CB3 /* ProtocalTimer.xcdatamodeld in Sources */,
+				885FC89C18BF5FF700C63044 /* Protocol.m in Sources */,
 				883DD6451807B378000B0CB3 /* AppDelegate.m in Sources */,
 				883DD6411807B378000B0CB3 /* main.m in Sources */,
-				889B6CAF18BE199400E18F66 /* Protocol.m in Sources */,
-				889B6CB818BE1C8F00E18F66 /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
