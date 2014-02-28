@@ -15,6 +15,7 @@
 @dynamic blurb;
 @dynamic name;
 @dynamic startTimeDuration;
+@dynamic daysFromStartTime;
 @dynamic protocol;
 
 @end

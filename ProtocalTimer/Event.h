@@ -16,6 +16,7 @@
 @property (nonatomic, retain) NSString * blurb;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * startTimeDuration;
+@property (nonatomic, retain) NSNumber * daysFromStartTime;
 @property (nonatomic, retain) Protocol *protocol;
 
 @end

@@ -151,7 +151,8 @@
             NSNumber * myNumber = [f numberFromString:[[alertView textFieldAtIndex:1] text]];
             [event setStartTimeDuration:myNumber];
             [event setProtocol:self.protocol];
-
+            [event setDaysFromStartTime:[NSNumber numberWithInt:[myNumber intValue]%24]];
+            
             // Save the context.
             NSError *error = nil;
             if (![[self.fetchedResultsController managedObjectContext] save:&error]) {
@@ -274,14 +275,14 @@
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"startTimeDuration" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"startTimeDuration" ascending:YES];
     NSArray *sortDescriptors = @[sortDescriptor];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
     
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"daysFromStartTime" cacheName:nil];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
     
