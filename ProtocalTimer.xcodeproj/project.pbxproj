@@ -42,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		883DD62F1807B378000B0CB3 /* ProtocalTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocalTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		883DD62F1807B378000B0CB3 /* Experimind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Experimind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883DD6321807B378000B0CB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		883DD6341807B378000B0CB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		883DD6361807B378000B0CB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -113,7 +113,7 @@
 		883DD6301807B378000B0CB3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				883DD62F1807B378000B0CB3 /* ProtocalTimer.app */,
+				883DD62F1807B378000B0CB3 /* Experimind.app */,
 				883DD65B1807B378000B0CB3 /* ProtocalTimerTests.xctest */,
 			);
 			name = Products;
@@ -200,7 +200,7 @@
 			);
 			name = ProtocalTimer;
 			productName = ProtocalTimer;
-			productReference = 883DD62F1807B378000B0CB3 /* ProtocalTimer.app */;
+			productReference = 883DD62F1807B378000B0CB3 /* Experimind.app */;
 			productType = "com.apple.product-type.application";
 		};
 		883DD65A1807B378000B0CB3 /* ProtocalTimerTests */ = {
@@ -433,7 +433,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProtocalTimer/ProtocalTimer-Prefix.pch";
 				INFOPLIST_FILE = "ProtocalTimer/ProtocalTimer-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Experimind;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -449,7 +449,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProtocalTimer/ProtocalTimer-Prefix.pch";
 				INFOPLIST_FILE = "ProtocalTimer/ProtocalTimer-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Experimind;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
